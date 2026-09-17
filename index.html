@@ -67,23 +67,37 @@
                 <span>Умею плохо в:</span><br>
                 <div class="parH3">
                     Python<br>
-                    MASM
+                    MASM<br>
+					PhysX
                 </div>
             </div>
             <div class="paragraphOdd">
                 <span class="parH1" id="primeriRABot">Примеры работ</span><br>
                 <div class="parH3Hor">
                     <div>
-                        <img src="images/graphicsEngine.png" alt="First Garphics Engin" class="imageSizer">
+                        <img src="images/graphicsEngine.png" alt="First Garphics Engine" class="imageSizer"><br>
+						Первый прототип моего графического движка достигнувший значимых результатов.
+						Он был способен отрисовывать видимые модели с динамическим освещением и отсекать не видимые.
+						Была система объектов и компонентов, предусматривалась возможность для модификации, использовался DirectX 11 версии.
+						А также сложность всего написанного мной кода не превышала линейную.
+						Он был быстрым и ультра небезопасным.
                     </div>
                     <div>
                         <video autoplay loop muted playsinline class="imageSizer">
                             <source src="images/liquid.mp4" type="video/mp4">
                             Your browser does not support the video tag.
-                        </video>
+                        </video><br>
+						Одна из множества анимаций, созданная моим небольшим симулятором жидкостей.
+						Он работал на одном потоке, поэтому разрешение поля, скорость жидкости и число байт на узел я стремился держать небольшими.
+						В основе лежит метод решёточных уравнений Больцмана. Благодаря паре трюков и тому что значения хранятся в целочисленных
+						переменных достигается полное постоянство массы и частицы не исчезают с течением времени из-за округления (conservative
+						mass-correction algorithm).
                     </div>
                     <div>
-                        <img src="images/graphicsEngine.png" alt="First Garphics Engin" class="imageSizer">
+                        <img src="images/GlitchSpeech.png" alt="First Garphics Engin" class="imageSizer"><br>
+						Клиент-сервер чат GlitchSpeech.
+						Почти не содержит багов так как написан строго по регламенту. Также содержит мало возможностей которые сложно расширить
+						из-за цельной заранее спроектированной структуры. Устойчив ко всем исключениям и может писать логи.
                     </div>
                 </div>
             </div>
