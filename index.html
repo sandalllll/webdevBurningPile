@@ -2,17 +2,22 @@
 <html>
     <body>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="script.js" defer></script>
+		<script src="js/jquery-4.0.0.min.js"></script>
+        <script src="js/dogSizer.js" defer></script>
+        <script src="js/complain.js" defer></script>
+        <script src="js/anchorsAnim.js" defer></script>
+        <script src="js/navigationButton.js" defer></script>
         <header class="headerMain">
             <div class="headerHeader">
                 <img src="images/dock4.png" id="dockMain" alt="Sandal's Logo" onclick="dockRevolve()" title="(Собака не моя (и нет я не эта собака (я в принципе не собака (я человек!))))">
                 <span>Дмитриев А.В.</span>
             </div>
             <nav class="headerButtons">
-                <a href="#oboMnye">Обо мне</a>
-                <a href="#haviky">Навыки</a>
-                <a href="#primeriRABot">Примеры работ</a>
-                <a href="#kontakty">Контакты</a>
+                <button class="link" id="navigation-btn">Навигация</button>
+                <a hidden id="nav-btn-0" href="#oboMnye">Обо мне</a>
+                <a hidden id="nav-btn-1" href="#haviky">Навыки</a>
+                <a hidden id="nav-btn-2" href="#primeriRABot">Примеры работ</a>
+                <a hidden id="nav-btn-3" href="#kontakty">Контакты</a>
             </nav>
             <div class="headerHeader">
             </div>
@@ -103,15 +108,23 @@
             </div>
             <div class="paragraphEven">
                 <span class="parH1" id="kontakty">Контакты</span><br>
-				Звонить: 4654644631
-				Писать: nit4spid@mail.com
-				GitHub: sandalllll
+				Звонить: 4654644631<br>
+				Писать: nit4spid@mail.com<br>
+				GitHub: sandalllll<br>
             </div>
         </div>
 		<footer  class="headerMain">
 			<div class="footerDiv">
 				2026
 			</div>
+			<button id="feedback-btn">Обратная связь</button>
+			<dialog id="feedback-modal">
+				<div style="width:100%; text-align: right;">
+					<span id="close-feedback-modal">&times;</span>
+				</div>
+				<h2>Привет</h2>
+				<p>Это модальное окно.</p>
+			</dialog>
 		</footer>
     </body>
 </html>
