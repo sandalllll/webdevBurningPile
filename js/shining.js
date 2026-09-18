@@ -12,7 +12,7 @@ document.addEventListener("scroll", (event) => {
 	for (let i = 0; i < 6; i++)
 	{
 		const rect = sectors[i].getBoundingClientRect();
-		if ((window.innerHeight - rect.top) < window.innerHeight)
+		if ((rect.top / window.innerHeight) >= 0.0)
 		{
 			switchTo = i;
 			break;

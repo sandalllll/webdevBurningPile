@@ -22,6 +22,20 @@ csButton.addEventListener("click", () => {
 		return;
 	}
 	
+	{
+		let xhr = new XMLHttpRequest();
+		xhr.open("POST", "https://reqbin.com/echo/post/json");//test
+		xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.onload = () => console.log(xhr.responseText);
+
+		let data = {
+		  "name": csName.value.trim(),
+		  "text": csText.value.trim(),
+		  "email": csEmail.value.trim(),
+		};
+
+		xhr.send(JSON.stringify(data));
+	}
 	
 	modal.close();
 	csName.value = "";
