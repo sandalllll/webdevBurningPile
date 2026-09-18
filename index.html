@@ -9,6 +9,7 @@
         <script src="js/anchorsAnim.js" defer></script>
         <script src="js/navigationButton.js" defer></script>
         <script src="js/shining.js" defer></script>
+        <script src="js/loadPort.js" defer></script>
         <header class="headerMain" id="headerS">
             <div class="headerHeader">
                 <img src="images/dock4.png" id="dockMain" alt="Sandal's Logo" onclick="dockRevolve()" title="(Собака не моя (и нет я не эта собака (я в принципе не собака (я человек!))))">
@@ -80,32 +81,8 @@
             </div>
             <div class="paragraphOdd" id="primeriRABot">
                 <span class="parH1">Примеры работ</span><br>
-                <div class="parH3Hor">
-                    <div>
-                        <img src="images/graphicsEngine.png" alt="First Garphics Engine" class="imageSizer"><br>
-						Первый прототип моего графического движка достигнувший значимых результатов.
-						Он был способен отрисовывать видимые модели с динамическим освещением и отсекать не видимые.
-						Была система объектов и компонентов, предусматривалась возможность для модификации, использовался DirectX 11 версии.
-						А также сложность всего написанного мной кода не превышала линейную.
-						Он был быстрым и ультра небезопасным.
-                    </div>
-                    <div>
-                        <video autoplay loop muted playsinline class="imageSizer">
-                            <source src="images/liquid.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video><br>
-						Одна из множества анимаций, созданная моим небольшим симулятором жидкостей.
-						Он работал на одном потоке, поэтому разрешение поля, скорость жидкости и число байт на узел я стремился держать небольшими.
-						В основе лежит метод решёточных уравнений Больцмана. Благодаря паре трюков и тому что значения хранятся в целочисленных
-						переменных достигается полное постоянство массы и частицы не исчезают с течением времени из-за округления (conservative
-						mass-correction algorithm).
-                    </div>
-                    <div>
-                        <img src="images/GlitchSpeech.png" alt="First Garphics Engin" class="imageSizer"><br>
-						Клиент-сервер чат GlitchSpeech.
-						Почти не содержит багов так как написан строго по регламенту. Также содержит мало возможностей которые сложно расширить
-						из-за цельной заранее спроектированной структуры. Устойчив ко всем исключениям и может писать логи.
-                    </div>
+                <div class="parH3Hor" id="portfolioContainer">
+
                 </div>
             </div>
             <div class="paragraphEven" id="kontakty">
