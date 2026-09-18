@@ -8,7 +8,6 @@ for (let i = 0; i < 4; i++)
 let hiddn = false;
 
 closeOpenNavButton.addEventListener("click", () => {
-	console.log("A")
 	for (let i = 0; i < 4; i++)
 	{
 		navButtons[i].hidden = hiddn;

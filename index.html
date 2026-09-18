@@ -5,6 +5,7 @@
 		<script src="js/jquery-4.0.0.min.js"></script>
         <script src="js/dogSizer.js" defer></script>
         <script src="js/complain.js" defer></script>
+        <script src="js/complainSend.js" defer></script>
         <script src="js/anchorsAnim.js" defer></script>
         <script src="js/navigationButton.js" defer></script>
         <header class="headerMain">
@@ -122,8 +123,11 @@
 				<div style="width:100%; text-align: right;">
 					<span id="close-feedback-modal">&times;</span>
 				</div>
-				<h2>Привет</h2>
-				<p>Это модальное окно.</p>
+				<input id="complain-send-name" placeholder="Вы кто?"></input><br>
+				<textarea id="complain-send-text" placeholder="Чего хотите?"></textarea><br>
+				<input id="complain-send-email" placeholder="Куда отвечать?"></input><br>
+				<span id="complain-send-result"></span><br>
+				<button id="complain-send-btn">Отправить</button>
 			</dialog>
 		</footer>
     </body>
