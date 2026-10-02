@@ -8,7 +8,6 @@ $.getJSON('data/portfolio.json', function(data) {
 		span = document.createElement("span");
 		span.innerText += work.text;
 		div.appendChild(span);
-		//div.innerText += work.text;
 		prt.appendChild(div);
 	});
 });

@@ -1,0 +1,28 @@
+{
+  "name": "buisnescard",
+  "version": "1.0.0",
+  "description": "lab 3 and higher",
+  "keywords": [
+    "sacabambaspis"
+  ],
+  "homepage": "https://github.com/sandalllll/webdevBurningPile#readme",
+  "bugs": {
+    "url": "https://github.com/sandalllll/webdevBurningPile/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandalllll/webdevBurningPile.git"
+  },
+  "license": "ISC",
+  "author": "sandall",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:dev": "sass --watch scss/main.scss:dist/css/main.css",
+    "build": "sass --no-source-map --style=compressed scss/main.scss:dist/css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
