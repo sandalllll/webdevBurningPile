@@ -1,1 +1,29 @@
 @use '../utils' as *;
+
+.button
+{
+	&:hover
+	{
+		color: red;
+	}
+	&:focus-visible
+	{
+		color: orange;
+	}
+	&:active
+	{
+		color: purple;
+	}
+	&:disabled
+	{
+		color: black;
+	}
+	&--top
+	{
+		color: var(--color-bc-odd);
+	}
+	&--bottom
+	{
+		color: var(--color-bc-even);
+	}
+}

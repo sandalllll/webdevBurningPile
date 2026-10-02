@@ -1,1 +1,10 @@
 @use '../utils' as *;
+
+.diplomat
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $max-size;
+    gap: $gap-big;
+}

@@ -1,1 +1,11 @@
 @use '../utils' as *;
+
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: $max-size;
+    gap: $gap-big;
+    background-color: var(--color-bc-other);
+}

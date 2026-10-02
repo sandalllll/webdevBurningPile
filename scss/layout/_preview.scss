@@ -1,1 +1,8 @@
 @use '../utils' as *;
+
+.preview
+{
+    width: $common-quarter;
+    height: auto;
+    max-width: $image-limit;
+}

@@ -1,1 +1,14 @@
 @use '../utils' as *;
+
+.paragraph
+{
+	padding: rem($padding-island);
+	&--odd
+	{
+		background-color: var(--color-bc-odd);
+	}
+	&--even
+	{
+		background-color: var(--color-bc-even);
+	}
+}

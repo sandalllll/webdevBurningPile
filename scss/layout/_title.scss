@@ -1,1 +1,13 @@
 @use '../utils' as *;
+
+.title
+{
+	&--big
+	{
+		font-size:$font-big;
+	}
+	&--small
+	{
+		padding: $padding-island-horizontal;
+	}
+}

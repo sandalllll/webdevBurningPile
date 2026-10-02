@@ -1,1 +1,10 @@
 @use '../utils' as *;
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+	@include respond-to(tablet) {
+		flex: $flex-equally;
+	}
+}

@@ -1,1 +1,7 @@
 @use '../utils' as *;
+
+.header
+{
+	@include header-props;
+    align-items: center;
+}

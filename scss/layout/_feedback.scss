@@ -1,1 +1,7 @@
 @use '../utils' as *;
+
+.feedback
+{
+	width: $max-size;
+	text-align: right;
+}

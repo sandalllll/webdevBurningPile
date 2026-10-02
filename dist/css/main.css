@@ -1,18 +1,111 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 11 | @forward 'button';
- *    | ^^^^^^^^^^^^^^^^^
- *    '
- *   scss\layout\_index.scss 11:1  @use
- *   scss\main.scss 3:1            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @forward 'button';\a    \2502  ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\_index.scss 11:1  @use\a   scss\\main.scss 3:1            root stylesheet";
+:root {
+  color-scheme: light;
+  --color-bc-other: beige;
+  --color-bc-odd: cadetblue;
+  --color-bc-even: cornflowerblue;
+  --color-bc-shining: yellow;
 }
+
+[data-theme=dark] {
+  color-scheme: dark;
+  --color-bc-other: rgb(8.5481128868%, 31.8179757452%, 73.6087498583%);
+  --color-bc-odd: rgb(25.1633986928%, 25.1633986928%, 7.1895424837%);
+  --color-bc-even: rgb(18.6274509804%, 30.9803921569%, 31.3725490196%);
+  --color-bc-shining: rgb(50%, 50%, 0%);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  background-color: var(--color-bc-other);
+}
+
+.header {
+  display: flex;
+  gap: 8px;
+  flex: 1 1 0%;
+  align-items: center;
+}
+
+.navigator {
+  display: flex;
+  gap: 8px;
+  flex: 1 1 0%;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .box {
+    flex: 1 1 0%;
+  }
+}
+
+.paragraph {
+  padding: 1.5rem;
+}
+.paragraph--odd {
+  background-color: var(--color-bc-odd);
+}
+.paragraph--even {
+  background-color: var(--color-bc-even);
+}
+
+.title--big {
+  font-size: 200%;
+}
+.title--small {
+  padding: 0px 20px;
+}
+
+.diplomat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.preview {
+  width: 25vw;
+  height: auto;
+  max-width: 170px;
+}
+
+.footer {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.feedback {
+  width: 100%;
+  text-align: right;
+}
+
+.button:hover {
+  color: red;
+}
+.button:focus-visible {
+  color: orange;
+}
+.button:active {
+  color: purple;
+}
+.button:disabled {
+  color: black;
+}
+.button--top {
+  color: var(--color-bc-odd);
+}
+.button--bottom {
+  color: var(--color-bc-even);
+}
+
+/*# sourceMappingURL=main.css.map */
