@@ -1,0 +1,72 @@
+.headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  background-color: beige;
+}
+
+.headerHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 0%;
+}
+
+.headerButtons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex: 1 1 0%;
+}
+
+.paragraphBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphOdd {
+  background-color: cadetblue;
+  padding: 20px 20px;
+}
+
+.paragraphEven {
+  background-color: cornflowerblue;
+  padding: 20px 20px;
+}
+
+.parH1 {
+  font-size: 200%;
+}
+
+.parH3 {
+  padding: 0px 20px;
+}
+
+.parH3Hor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.imageSizer {
+  width: 25vw;
+  height: auto;
+  max-width: 170px;
+}
+
+.footerDiv {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.rightAlign {
+  width: 100%;
+  text-align: right;
+}
+
+/*# sourceMappingURL=main.css.map */
