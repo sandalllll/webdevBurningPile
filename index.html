@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="bright">
     <body>
         <link rel="stylesheet" href="dist/css/main.css">
 		<script src="js/jquery-4.0.0.min.js"></script>
@@ -10,24 +10,28 @@
         <script src="js/navigationButton.js" defer></script>
         <script src="js/shining.js" defer></script>
         <script src="js/loadPort.js" defer></script>
-        <header class="headerMain" id="headerS">
-            <div class="headerHeader">
+        <script src="js/theme.js" defer></script>
+        <header class="main" id="headerS">
+            <div class="header">
                 <img src="images/dock4.png" id="dockMain" alt="Sandal's Logo" onclick="dockRevolve()" title="(Собака не моя (и нет я не эта собака (я в принципе не собака (я человек!))))">
                 <span>Дмитриев А.В.</span>
             </div>
-            <nav class="headerButtons">
-                <button class="link" id="navigation-btn">Навигация</button>
+            <nav class="navigator">
+                <button class="button button--top" class="link" id="navigation-btn">Навигация</button>
                 <a hidden id="nav-btn-0" href="#oboMnye">Обо мне</a>
                 <a hidden id="nav-btn-1" href="#haviky">Навыки</a>
                 <a hidden id="nav-btn-2" href="#primeriRABot">Примеры работ</a>
                 <a hidden id="nav-btn-3" href="#kontakty">Контакты</a>
             </nav>
-            <div class="headerHeader">
+            <div class="header">
+				<div class="feedback">
+				полночь<input type="checkbox" id="theTheme">
+				</div>
             </div>
         </header>
-        <div class="paragraphBox">
-            <div class="paragraphOdd" id="oboMnye">
-                <span class="parH1">Обо мне</span><br>
+        <div class="box">
+            <div class="paragraph paragraph--odd" id="oboMnye">
+                <span class="title title--big">Обо мне</span><br>
                 <span>
                     Учусь.<br>
                     Занимаюсь всякой всячиной.<br>
@@ -35,7 +39,7 @@
                     Борюсь с архаизмами в математике.<br>
                     140 IQ.<br>
 					Люблю:<br>
-					<div class="parH3">
+					<div class="title title--small">
 						C<br>
 						DirectX12<br>
 						LBM симуяцию жидкостей<br>
@@ -44,20 +48,20 @@
 						PhysX
 					</div>
 					Не люблю:<br>
-					<div class="parH3">
+					<div class="title title--small">
 						Базы данных<br>
 						Современную математику
 					</div>
                 </span>
             </div>
-            <div class="paragraphEven" id="haviky">
-                <span class="parH1">Навыки</span><br>
+            <div class="paragraph paragraph--even" id="haviky">
+                <span class="title title--big">Навыки</span><br>
                 <span>Умею хорошо в:</span><br>
-                <div class="parH3">
+                <div class="title title--small">
                     C
                 </div>
                 <span>Умею нормально в:</span><br>
-                <div class="parH3">
+                <div class="title title--small">
                     C++<br>
                     C#<br>
                     JS<br>
@@ -73,33 +77,33 @@
                     LBM симуяция жидкостей
                 </div>
                 <span>Умею плохо в:</span><br>
-                <div class="parH3">
+                <div class="title title--small">
                     Python<br>
                     MASM<br>
 					PhysX
                 </div>
             </div>
-            <div class="paragraphOdd" id="primeriRABot">
-                <span class="parH1">Примеры работ</span><br>
-                <div class="parH3Hor" id="portfolioContainer">
+            <div class="paragraph paragraph--odd" id="primeriRABot">
+                <span class="title title--big">Примеры работ</span><br>
+                <div class="diplomat" id="portfolioContainer">
 
                 </div>
             </div>
-            <div class="paragraphEven" id="kontakty">
-                <span class="parH1">Контакты</span><br>
+            <div class="paragraph paragraph--even" id="kontakty">
+                <span class="title title--big">Контакты</span><br>
 				Звонить: 4654644631<br>
 				Писать: nit4spid@mail.com<br>
 				GitHub: sandalllll<br>
             </div>
         </div>
-		<footer  class="headerMain" id="footerS">
+		<footer  class="main" id="footerS">
 			<a href="#headerS">Вверх</a>
-			<div class="footerDiv">
+			<div class="footer">
 				2026
 			</div>
-			<button id="feedback-btn">Обратная связь</button>
+			<button class="button button--bottom" id="feedback-btn">Обратная связь</button>
 			<dialog id="feedback-modal">
-				<div class="rightAlign">
+				<div class="feedback">
 					<span id="close-feedback-modal">&times;</span>
 				</div>
 				<input id="complain-send-name" placeholder="Вы кто?"></input><br>

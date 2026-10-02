@@ -1,0 +1,43 @@
+@use "sass:color";
+
+$gap-small: 8px;
+$gap-medium: 14px;
+$gap-big: 20px;
+
+$flex-equally: 1 1 0%;
+
+$padding-island: 96px;
+$padding-island-horizontal: 0px 20px;
+
+$font-big: 200%;
+$font-medium: 150%;
+$font-small: 100%;
+
+$max-size: 100%;
+$common-quarter: 25vw;
+
+$image-limit: 170px;
+
+$font-size-base: 64px;
+
+
+$breakpoints: (
+	mobile: 480px,
+	tablet: 768px,
+	desktop: 1024px,
+);
+
+
+$theme-light: (
+	bc-other: beige,
+	bc-odd: cadetblue,
+	bc-even: cornflowerblue,
+	bc-shining: yellow,
+);
+
+$theme-dark: (
+	bc-other: color.adjust(cornflowerblue, $lightness: -25%),
+	bc-odd: color.adjust(beige, $lightness: -75%),
+	bc-even: color.adjust(cadetblue, $lightness: -25%),
+	bc-shining: color.adjust(yellow, $lightness: -25%),
+);

@@ -3,86 +3,118 @@
 @use 'layout';
 @use 'components';
 
-.headerMain
+
+@use 'utils' as *;
+
+.main
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    gap: 20px;
-    background-color: beige;
+    width: $max-size;
+    gap: $gap-big;
+    background-color: var(--color-bc-other);
 }
 
-.headerHeader
+.header
 {
-    display: flex;
+	@include header-props;
     align-items: center;
-    gap: 8px;
-    flex: 1 1 0%;
 }
 
-.headerButtons
+.navigator
 {
-    display: flex;
+	@include header-props;
     justify-content: center;
-    gap: 8px;
-    flex: 1 1 0%;
 }
 
-.paragraphBox
+.box
 {
     display: flex;
     flex-direction: column;
+	@include respond-to(tablet) {
+		flex: $flex-equally;
+	}
 }
 
-.paragraphOdd
+.paragraph
 {
-    background-color: cadetblue;
-    padding: 20px 20px;
+	padding: rem($padding-island);
+	&--odd
+	{
+		background-color: var(--color-bc-odd);
+	}
+	&--even
+	{
+		background-color: var(--color-bc-even);
+	}
 }
 
-.paragraphEven
+.title
 {
-    background-color: cornflowerblue;
-    padding: 20px 20px;
+	&--big
+	{
+		font-size:$font-big;
+	}
+	&--small
+	{
+		padding: $padding-island-horizontal;
+	}
 }
 
-.parH1
-{
-    font-size:200%;
-}
-
-.parH3
-{
-    padding: 0px 20px;
-}
-
-.parH3Hor
+.diplomat
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    gap: 20px;
+    width: $max-size;
+    gap: $gap-big;
 }
 
-.imageSizer
+.preview
 {
-    width: 25vw;
+    width: $common-quarter;
     height: auto;
-    max-width: 170px;
+    max-width: $image-limit;
 }
 
-.footerDiv
+.footer
 {
 	text-align: center;
 	vertical-align: middle;
-    width: 100%;
+    width: $max-size;
 }
 
-.rightAlign
+.feedback
 {
-	width:100%;
-	text-align:
-	right;
+	width: $max-size;
+	text-align: right;
+}
+
+.button
+{
+	&:hover
+	{
+		color: red;
+	}
+	&:focus-visible
+	{
+		color: orange;
+	}
+	&:active
+	{
+		color: purple;
+	}
+	&:disabled
+	{
+		color: black;
+	}
+	&--top
+	{
+		color: var(--color-bc-odd);
+	}
+	&--bottom
+	{
+		color: var(--color-bc-even);
+	}
 }

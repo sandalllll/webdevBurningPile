@@ -1,72 +1,18 @@
-.headerMain {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 20px;
-  background-color: beige;
-}
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 11 | @forward 'button';
+ *    | ^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\layout\_index.scss 11:1  @use
+ *   scss\main.scss 3:1            root stylesheet */
 
-.headerHeader {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex: 1 1 0%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502  @forward 'button';\a    \2502  ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\_index.scss 11:1  @use\a   scss\\main.scss 3:1            root stylesheet";
 }
-
-.headerButtons {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex: 1 1 0%;
-}
-
-.paragraphBox {
-  display: flex;
-  flex-direction: column;
-}
-
-.paragraphOdd {
-  background-color: cadetblue;
-  padding: 20px 20px;
-}
-
-.paragraphEven {
-  background-color: cornflowerblue;
-  padding: 20px 20px;
-}
-
-.parH1 {
-  font-size: 200%;
-}
-
-.parH3 {
-  padding: 0px 20px;
-}
-
-.parH3Hor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  gap: 20px;
-}
-
-.imageSizer {
-  width: 25vw;
-  height: auto;
-  max-width: 170px;
-}
-
-.footerDiv {
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.rightAlign {
-  width: 100%;
-  text-align: right;
-}
-
-/*# sourceMappingURL=main.css.map */

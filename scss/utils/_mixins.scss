@@ -1,0 +1,24 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@mixin respond-to($breakpoint) {
+  @if not map.has-key($breakpoints, $breakpoint) {
+    @error "Неизвестный брейкпоинт: `#{$breakpoint}`. Доступны: #{map.keys($breakpoints)}";
+  }
+
+  @media (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+	
+@mixin header-props {
+    display: flex;
+    gap: $gap-small;
+    flex: $flex-equally;
+}
+
+@mixin theme-vars($theme) {
+  @each $name, $value in $theme {
+    --color-#{$name}: #{$value};
+  }
+}

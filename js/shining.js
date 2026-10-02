@@ -22,6 +22,6 @@ document.addEventListener("scroll", (event) => {
 	{
 		sectors[shiningAt].style.backgroundColor = "";
 		shiningAt = switchTo;
-		sectors[shiningAt].style.backgroundColor = "Yellow";
+		sectors[shiningAt].style.backgroundColor = "var(--color-bc-shining)";
 	}
 })

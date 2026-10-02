@@ -1,0 +1,11 @@
+@use '../utils' as *;
+
+:root {
+  color-scheme: light;
+  @include theme-vars($theme-light);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  @include theme-vars($theme-dark);
+}
